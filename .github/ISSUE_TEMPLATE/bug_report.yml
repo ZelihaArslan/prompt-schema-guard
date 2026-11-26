@@ -1,0 +1,19 @@
+name: Bug Report
+description: Report a schema validation bug or false-positive guardrail trigger
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Provide the raw LLM output and schema configuration that triggered the issue.
+    validations:
+      required: true
+  - type: input
+    id: python-version
+    attributes:
+      label: Python Version
+      placeholder: "e.g. 3.11"
+    validations:
+      required: true

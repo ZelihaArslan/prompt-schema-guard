@@ -1,0 +1,23 @@
+{
+  "allow_extra_fields": false,
+  "block_pii": true,
+  "fields": {
+    "sentiment": {
+      "type": "str",
+      "required": true,
+      "choices": ["positive", "neutral", "negative"]
+    },
+    "confidence": {
+      "type": "float",
+      "required": true,
+      "min_value": 0.0,
+      "max_value": 1.0
+    },
+    "summary": {
+      "type": "str",
+      "required": true,
+      "min_length": 5,
+      "max_length": 200
+    }
+  }
+}

@@ -1,0 +1,8 @@
+Here is the structured analysis:
+```json
+{
+  "sentiment": "positive",
+  "confidence": 0.96,
+  "summary": "All integration tests passed without errors."
+}
+```
